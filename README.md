@@ -10,5 +10,6 @@ $ docker build -t postgres .
 ## Run
 
 ```bash
-$ docker run --rm -P --name postgres_container postgres .
+$ docker run --name pg_container -e POSTGRES_PASSWORD=mysecretpassword -d vedarthk/postgres:9.5
+
 ```
